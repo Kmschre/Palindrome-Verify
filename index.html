@@ -4,23 +4,24 @@
         <meta charset="UTF-8">
         <title>Verify a Palindrome</title>
         <link rel="stylesheet" href="styles.css"></link>
-        <script src="script.js" charset="utf-8"></script>
     </head>
     <body>
         <div class="body-section">
-            <h1>Am I a Palindrome?</h1>
+            <h1>Verify Palindrome</h1>
             <div class="verify-container">
-                <p>Verify Palindrome</p>
-                <div class="input-container">
-                    <input type="text" placeholder="verify palindrome here"/>
-                    <button type="submit"></button>
+                <div class="input-container" onsubmit="event.verifyPalindrome()">
+                    <input type="text" id="input-text" placeholder="Enter a word"/>
+                    <button type="submit" id="btn">Check</button>
                 </div>
-                <p> Yes, this is a Plaindrome! </p>
+                <p id="response"></p>
             </div>
         </div>
+        <footer>
+            <div class="joke">
+                <p>My friend and I love to have discussions on palindromes...</p>
+                <p>We constantly go back and forth.</p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
     </body>
-    <footer>
-        <p>My friend and I love to have discussions on palindromes...</p>
-        <p>We constantly go back and forth.</p>
-    </footer>
 </html>
